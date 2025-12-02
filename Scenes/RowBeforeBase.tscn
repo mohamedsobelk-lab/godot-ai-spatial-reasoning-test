@@ -1,0 +1,80 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/button_inactive.png" type="Texture" id=2]
+
+[node name="ItemRow" type="HBoxContainer"]
+margin_right = 312.0
+margin_bottom = 35.0
+rect_min_size = Vector2( 312, 0 )
+mouse_filter = 2
+custom_constants/separation = 10
+
+[node name="ItemLabel" type="Label" parent="."]
+margin_top = 6.0
+margin_right = 128.0
+margin_bottom = 29.0
+rect_min_size = Vector2( 70.5, 23 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Item Before [ Base ]"
+align = 1
+valign = 1
+
+[node name="Button1" type="TextureButton" parent="."]
+margin_left = 138.0
+margin_right = 208.5
+margin_bottom = 35.0
+rect_min_size = Vector2( 70.5, 0 )
+size_flags_vertical = 3
+texture_normal = ExtResource( 2 )
+expand = true
+
+[node name="Label1" type="Label" parent="Button1"]
+margin_top = 3.0
+margin_right = 70.5
+margin_bottom = 51.0
+rect_min_size = Vector2( 70.5, 23 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Line 1 Line 2 Line 3"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Button2" type="TextureButton" parent="."]
+margin_left = 218.0
+margin_right = 288.5
+margin_bottom = 35.0
+rect_min_size = Vector2( 70.5, 0 )
+size_flags_vertical = 3
+texture_normal = ExtResource( 2 )
+expand = true
+
+[node name="Label2" type="Label" parent="Button2"]
+margin_top = 3.0
+margin_right = 70.5
+margin_bottom = 51.0
+rect_min_size = Vector2( 70.5, 23 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Line 1 Line 2 Line 3"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="Button3" type="TextureButton" parent="."]
+margin_left = 298.0
+margin_right = 368.5
+margin_bottom = 35.0
+rect_min_size = Vector2( 70.5, 0 )
+size_flags_vertical = 3
+texture_normal = ExtResource( 2 )
+expand = true
+
+[node name="Label3" type="Label" parent="Button3"]
+margin_top = 3.0
+margin_right = 70.5
+margin_bottom = 51.0
+rect_min_size = Vector2( 70.5, 23 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Line 1 Line 2 Line 3"
+align = 1
+valign = 1
+autowrap = true

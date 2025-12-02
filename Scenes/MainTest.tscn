@@ -1,0 +1,59 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scenes/RowAfterWithTHuman.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/RowBeforeBase.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/RowBeforeWithAI2.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/RowBeforeWithAI1.tscn" type="PackedScene" id=4]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.784314, 0.784314, 0.784314, 1 )
+expand_margin_left = 10.0
+expand_margin_right = 10.0
+expand_margin_top = 10.0
+expand_margin_bottom = 10.0
+
+[node name="MainTest" type="CanvasLayer"]
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer"]
+margin_right = 421.0
+margin_bottom = 275.0
+custom_constants/separation = 50
+
+[node name="VBoxCBeforeBase" type="VBoxContainer" parent="PanelContainer/VBoxContainer"]
+margin_right = 421.0
+margin_bottom = 23.0
+
+[node name="ItemRow" parent="PanelContainer/VBoxContainer/VBoxCBeforeBase" instance=ExtResource( 2 )]
+margin_right = 421.0
+margin_bottom = 23.0
+
+[node name="VBoxCBeforeWithAI1" type="VBoxContainer" parent="PanelContainer/VBoxContainer"]
+margin_top = 73.0
+margin_right = 421.0
+margin_bottom = 96.0
+
+[node name="ItemRow" parent="PanelContainer/VBoxContainer/VBoxCBeforeWithAI1" instance=ExtResource( 4 )]
+margin_right = 421.0
+
+[node name="VBoxCBeforeWithAI2" type="VBoxContainer" parent="PanelContainer/VBoxContainer"]
+margin_top = 146.0
+margin_right = 421.0
+margin_bottom = 169.0
+
+[node name="ItemRow" parent="PanelContainer/VBoxContainer/VBoxCBeforeWithAI2" instance=ExtResource( 3 )]
+margin_right = 421.0
+margin_bottom = 23.0
+
+[node name="VBoxCAfterTHuman" type="VBoxContainer" parent="PanelContainer/VBoxContainer"]
+margin_top = 219.0
+margin_right = 421.0
+margin_bottom = 275.0
+
+[node name="ItemRow" parent="PanelContainer/VBoxContainer/VBoxCAfterTHuman" instance=ExtResource( 1 )]
+margin_right = 421.0
+margin_bottom = 56.0

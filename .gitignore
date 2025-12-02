@@ -1,0 +1,38 @@
+# Godot import cache (Critical to ignore)
+.import/
+
+# Godot 4.x cache (Good to include just in case you accidentally open it in 4.0)
+.godot/
+
+# Export presets (Contains local paths and export configurations)
+export_presets.cfg
+
+# Mono/C# generated files (If you or users open it with the Mono version)
+.mono/
+data_*/
+mono_crash.*.json
+
+# Visual Studio / VS Code / Rider project files
+.vscode/
+.idea/
+*.sln
+*.csproj
+*.sln
+*.user
+*.suo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Crash logs
+*.log
+
+# Screenshots folder (Optional: If you are storing screenshots for the README 
+# but don't want them cluttering the history, though usually you DO want to track these)
+# screenshots/
