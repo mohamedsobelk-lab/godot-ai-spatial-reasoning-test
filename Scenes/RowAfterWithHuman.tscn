@@ -1,0 +1,116 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/button_inactive.png" type="Texture" id=2]
+
+[node name="ItemRow" type="HBoxContainer"]
+margin_right = 312.0
+margin_bottom = 35.0
+rect_min_size = Vector2( 312, 0 )
+mouse_filter = 2
+custom_constants/separation = 10
+
+[node name="ItemLabel" type="Label" parent="."]
+margin_top = 16.0
+margin_right = 166.0
+margin_bottom = 39.0
+rect_min_size = Vector2( 70.5, 23 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Item After [ With Human ]"
+align = 1
+valign = 1
+
+[node name="MarginContainerActionPrimary" type="MarginContainer" parent="."]
+margin_left = 176.0
+margin_right = 246.5
+margin_bottom = 56.0
+mouse_filter = 2
+
+[node name="Button1" type="TextureButton" parent="MarginContainerActionPrimary"]
+margin_right = 70.5
+margin_bottom = 56.0
+rect_min_size = Vector2( 70.5, 0 )
+size_flags_vertical = 3
+texture_normal = ExtResource( 2 )
+expand = true
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainerActionPrimary"]
+margin_right = 70.5
+margin_bottom = 56.0
+mouse_filter = 2
+custom_constants/margin_top = 3
+custom_constants/margin_bottom = 5
+
+[node name="Label1" type="Label" parent="MarginContainerActionPrimary/MarginContainer"]
+margin_top = 3.0
+margin_right = 70.5
+margin_bottom = 51.0
+rect_min_size = Vector2( 70.5, 23 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Line 1 Line 2 Line 3"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="MarginContainerActionSecondary" type="MarginContainer" parent="."]
+margin_left = 256.0
+margin_right = 326.5
+margin_bottom = 56.0
+mouse_filter = 2
+
+[node name="Button2" type="TextureButton" parent="MarginContainerActionSecondary"]
+margin_right = 70.5
+margin_bottom = 56.0
+rect_min_size = Vector2( 70.5, 0 )
+size_flags_vertical = 3
+texture_normal = ExtResource( 2 )
+expand = true
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainerActionSecondary"]
+margin_right = 70.5
+margin_bottom = 56.0
+mouse_filter = 2
+custom_constants/margin_top = 3
+custom_constants/margin_bottom = 5
+
+[node name="Label2" type="Label" parent="MarginContainerActionSecondary/MarginContainer"]
+margin_top = 3.0
+margin_right = 70.5
+margin_bottom = 51.0
+rect_min_size = Vector2( 70.5, 23 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Line 1 Line 2 Line 3"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="MarginContainerActionTertiary" type="MarginContainer" parent="."]
+margin_left = 336.0
+margin_right = 406.5
+margin_bottom = 56.0
+mouse_filter = 2
+
+[node name="Button3" type="TextureButton" parent="MarginContainerActionTertiary"]
+margin_right = 70.5
+margin_bottom = 56.0
+rect_min_size = Vector2( 70.5, 0 )
+size_flags_vertical = 3
+texture_normal = ExtResource( 2 )
+expand = true
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainerActionTertiary"]
+margin_right = 70.5
+margin_bottom = 56.0
+mouse_filter = 2
+custom_constants/margin_top = 3
+custom_constants/margin_bottom = 5
+
+[node name="Label3" type="Label" parent="MarginContainerActionTertiary/MarginContainer"]
+margin_top = 3.0
+margin_right = 70.5
+margin_bottom = 51.0
+rect_min_size = Vector2( 70.5, 23 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Line 1 Line 2 Line 3"
+align = 1
+valign = 1
+autowrap = true
